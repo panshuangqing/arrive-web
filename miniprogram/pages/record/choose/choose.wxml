@@ -1,0 +1,50 @@
+
+<van-search bind:change="bindInput" value="{{searchValue}}" placeholder="请输入搜索关键词" />
+
+<view class="" hover-class="none" hover-stop-propagation="false" style="width: 100%; height: 80%;">
+    <map
+        id="map" longitude="{{longitude}}" latitude="{{latitude}}"
+        markers="{{markers}}" scale="{{scale}}"  polyline="{{polyline}}"
+        show-location show-scale style="width: 100%; height: 100%;"
+        bindpoitap="{{bindpoitap}}"
+    >
+    </map>
+    <cover-view bindtouchstart="bindSearch" class="map-search-list" wx:if="{{isShow}}" >
+        <van-cell title="{{item.name}}" data-keywords="{{item.name}}" data-location="{{item.location}}" wx:key="searchId"  wx:for="{{tips}}">
+            <van-icon slot="right-icon" name="search" class="custom-icon" />
+        </van-cell>
+    </cover-view>
+</view>
+
+
+<van-cell title="{{textData.name}} {{textData.desc}}" border="{{ false }}" icon="location-o" title-class="cell-title-class" title-width="75">
+    <van-icon slot="right-icon" name="add" bind:click="showDialog" size="large"/>
+</van-cell>
+
+
+
+<van-dialog
+    use-slot
+    title="地址"
+    show="{{confirm_show}}"
+    showCancelButton="true"
+    bind:cancle="onClose"
+    bind:confirm="add"
+>
+    <van-panel title="选择的位置详情" desc="add" status="状态">
+        <div>
+            <van-row>
+                <van-col span="6" offset="2">经度：</van-col>
+                <van-col span="8">{{longitude}}</van-col>
+            </van-row>
+            <van-row>
+                <van-col span="6" offset="2">纬度：</van-col>
+                <van-col span="8" offset="1">{{latitude}}</van-col>
+            </van-row>
+            <van-row>
+                <van-col span="6" offset="2">地址：</van-col>
+                <van-col span="12" offset="1">{{textData.name}}</van-col>
+            </van-row>
+        </div>
+    </van-panel>
+</van-dialog>

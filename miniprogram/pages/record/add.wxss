@@ -1,0 +1,12 @@
+/* pages/record/add.wxss */
+
+.add-button
+{
+    height: 46px;
+    width: 46px;
+    position: fixed;
+    bottom: 5px;
+    margin:auto;
+    left:0;
+    right:0;
+}

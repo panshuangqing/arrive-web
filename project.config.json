@@ -1,0 +1,106 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"nodeModules": true
+	},
+	"appid": "wx07da67d75a2b989f",
+	"projectname": "arrive-clound",
+	"libVersion": "2.8.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/record/add",
+					"pathName": "pages/record/add",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/detail/detail",
+					"pathName": "pages/detail/detail",
+					"query": "longitude=113.97939&latitude=22.540746&record_longitude=113.900884&record_latitude=22.553961",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/navigation_walk/navigation",
+					"pathName": "pages/navigation_walk/navigation",
+					"query": "record= {     \"latitude\": 22.540746,     \"longitude\": 113.979399,     \"recordlatitude\": 22.553961,     \"recordlongitude\": 113.900884,     \"address\": \"百度国际大厦\" }",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/add/add",
+					"pathName": "pages/add/add",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "默认当前定位详情",
+					"pathName": "pages/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "地址选择",
+					"pathName": "pages/record/choose/choose",
+					"query": "latitude=22.540746&longitude=113.979399&recordlatitude=113.900884&recordlongitude=22.553961&name=黄丽家&desc=酸奶在家",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "pages/record/more/more",
+					"pathName": "pages/record/more/more",
+					"query": "longitude=113.97939&latitude=22.540746&record_longitude=113.900884&record_latitude=22.553961",
+					"scene": null
+				}
+			]
+		}
+	}
+}

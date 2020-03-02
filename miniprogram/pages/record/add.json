@@ -1,0 +1,12 @@
+{
+    "usingComponents": {
+        "van-steps": "../../miniprogram_npm/vant-weapp/steps/index",
+        "van-button": "../../miniprogram_npm/vant-weapp/button/index",
+        "van-row": "../../miniprogram_npm/vant-weapp/row/index",
+        "van-col": "../../miniprogram_npm/vant-weapp/col/index",
+        "van-cell": "../../miniprogram_npm/vant-weapp/cell/index",
+        "van-cell-group": "../../miniprogram_npm/vant-weapp/cell-group/index",
+        "van-dialog": "../../miniprogram_npm/vant-weapp/dialog/index",
+        "van-swipe-cell": "../../miniprogram_npm/vant-weapp/swipe-cell/index"
+    }
+}

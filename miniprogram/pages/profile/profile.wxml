@@ -1,0 +1,4 @@
+<van-button type='danger' bind:click="onTest">测试</van-button>
+
+
+<van-button type='danger' bind:click="testScale">测试Scale</van-button>

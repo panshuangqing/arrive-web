@@ -1,0 +1,5 @@
+<van-swipe-cell right-width="{{ 60 }}" left-width="{{60}}" wx:for="{{records}}" wx:key="one_record" wx:for-item="one_record" bind:click="onDetail">
+    <van-button type="primary" slot="left" bind:click="onShareFunction" >分享</van-button>
+    <van-cell title="地址" value="{{one_record.show_name}}" />
+    <van-button type="danger" slot="right">删除</van-button>
+</van-swipe-cell>

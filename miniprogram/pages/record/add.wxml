@@ -1,0 +1,40 @@
+<!--pages/record/add.wxml-->
+
+<van-cell icon="location-o"
+    bind:click="openDialog"
+>
+    <view slot="title">
+        <view>添加中</view>
+    </view>
+    <view >
+        <view>怎么玩?</view>
+    </view>
+</van-cell>
+<van-steps
+    steps="{{ steps }}"
+    active="{{ active }}"
+    active-icon="success"
+    active-color="#38f"
+/>
+
+
+<van-dialog
+    use-slot
+    title="不知道怎么玩"
+    show="{{ showDialog }}"
+    show-cancel-button
+    bind:close="onClose"
+    bind:getuserinfo="onClose"
+>
+    <van-steps
+      steps="{{ steps }}"
+      active="{{ active }}"
+      direction="vertical"
+      active-icon="success"
+      active-color="#38f"
+      />
+</van-dialog>
+
+
+
+<van-button  bind:click="SwitchAdd" round class="add-button" color="linear-gradient(to right, #f3f2f2, #dbe5ef)" icon="../../../images/add-image.png"></van-button>

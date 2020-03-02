@@ -1,0 +1,10 @@
+
+<view class="" hover-class="none" hover-stop-propagation="false" style="width: 100%; height: 100%;">
+    <map
+        id="map" longitude="{{longitude}}" latitude="{{latitude}}"
+        markers="{{markers}}" scale="{{scale}}"  polyline="{{polylines}}"
+        show-location show-scale style="width: 100%; height: 100%;"
+        bindpoitap="{{bindpoitap}}"
+    >
+    </map>
+</view>
